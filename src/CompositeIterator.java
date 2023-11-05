@@ -22,7 +22,7 @@ public class CompositeIterator implements Iterator<Component> {
         }
 
         Component component = elements.remove(0);
-        if (component instanceof Composite) {
+        if (component.isComposite()) {
             elements.addAll(0, ((Composite) component).children);
         }
 

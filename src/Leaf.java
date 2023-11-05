@@ -18,4 +18,9 @@ public class Leaf implements Component {
     public void operation() {
         System.out.println("Я лист: " + name);
     }
+
+    @Override
+    public boolean isComposite() {
+        return false;
+    }
 }

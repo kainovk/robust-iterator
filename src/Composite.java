@@ -21,8 +21,14 @@ public class Composite implements Component, Iterable<Component> {
         children.add(component);
     }
 
+    @Override
     public void operation() {
         System.out.println("Я компоновщик: " + name);
+    }
+
+    @Override
+    public boolean isComposite() {
+        return true;
     }
 
     @Override
